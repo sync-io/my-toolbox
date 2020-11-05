@@ -19,9 +19,9 @@ jobs:
     -
         name: Builder instance name
         run: echo ${{ steps.buildx.outputs.name }}
-        -
-            name: Available platforms
-            run: echo ${{ steps.buildx.outputs.platforms }}
+    -
+        name: Available platforms
+        run: echo ${{ steps.buildx.outputs.platforms }}
     - 
         name: Push to GitHub Packages
         uses: docker/build-push-action@v1
